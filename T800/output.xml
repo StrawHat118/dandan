@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180316 14:23:32.690" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\codes\ci\static\T800\tc" id="s1" name="Tc">
+<suite source="D:\codes\ci\static\T800\tc\添加子BD" id="s1-s1" name="添加子BD">
+<suite source="D:\codes\ci\static\T800\tc\添加子BD\addBD.robot" id="s1-s1-s1" name="addBD">
+<test id="s1-s1-s1-t1" name="添加子BD">
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20180316 14:23:33.272" starttime="20180316 14:23:33.271"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://wapescrow.tourongjia.com/#/login///</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180316 14:23:33.280" level="INFO">Opening browser 'chrome' to base url 'https://wapescrow.tourongjia.com/#/login///'</msg>
+<status status="PASS" endtime="20180316 14:23:45.226" starttime="20180316 14:23:33.279"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#MobileNum</arg>
+<arg>18367150822</arg>
+</arguments>
+<msg timestamp="20180316 14:23:45.237" level="INFO">Typing text '18367150822' into text field 'css=#MobileNum'</msg>
+<status status="PASS" endtime="20180316 14:23:45.809" starttime="20180316 14:23:45.237"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; ion-nav-view &gt; ion-side-menus &gt; ion-side-menu-content &gt; ion-nav-view &gt; ion-view &gt; ion-content &gt; div.scroll &gt; form &gt; div &gt; div &gt; button</arg>
+</arguments>
+<msg timestamp="20180316 14:23:45.810" level="INFO">Clicking element 'css=body &gt; ion-nav-view &gt; ion-side-menus &gt; ion-side-menu-content &gt; ion-nav-view &gt; ion-view &gt; ion-content &gt; div.scroll &gt; form &gt; div &gt; div &gt; button'.</msg>
+<status status="PASS" endtime="20180316 14:23:46.026" starttime="20180316 14:23:45.809"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#PwdNum</arg>
+<arg>m123456</arg>
+</arguments>
+<msg timestamp="20180316 14:23:46.029" level="INFO">Typing text 'm123456' into text field 'css=#PwdNum'</msg>
+<status status="PASS" endtime="20180316 14:23:46.566" starttime="20180316 14:23:46.028"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; ion-nav-view &gt; ion-side-menus &gt; ion-side-menu-content &gt; ion-nav-view &gt; ion-view &gt; ion-content &gt; div.scroll &gt; form &gt; div &gt; div &gt; button</arg>
+</arguments>
+<msg timestamp="20180316 14:23:46.567" level="INFO">Clicking element 'css=body &gt; ion-nav-view &gt; ion-side-menus &gt; ion-side-menu-content &gt; ion-nav-view &gt; ion-view &gt; ion-content &gt; div.scroll &gt; form &gt; div &gt; div &gt; button'.</msg>
+<status status="PASS" endtime="20180316 14:23:46.749" starttime="20180316 14:23:46.567"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=body &gt; ion-nav-view &gt; ion-side-menus &gt; ion-side-menu-content &gt; ion-nav-view &gt; ion-view &gt; ion-tabs &gt; div &gt; a:nth-child(8)</arg>
+</arguments>
+<msg timestamp="20180316 14:23:46.756" level="INFO">Clicking element 'css=body &gt; ion-nav-view &gt; ion-side-menus &gt; ion-side-menu-content &gt; ion-nav-view &gt; ion-view &gt; ion-tabs &gt; div &gt; a:nth-child(8)'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180316 14:23:57.335" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180316 14:23:57.335" starttime="20180316 14:23:56.793"></status>
+</kw>
+<msg timestamp="20180316 14:23:57.397" level="FAIL">ValueError: Element locator 'css=body &gt; ion-nav-view &gt; ion-side-menus &gt; ion-side-menu-content &gt; ion-nav-view &gt; ion-view &gt; ion-tabs &gt; div &gt; a:nth-child(8)' did not match any elements.</msg>
+<status status="FAIL" endtime="20180316 14:23:57.397" starttime="20180316 14:23:46.755"></status>
+</kw>
+<doc>注册手机号并开户</doc>
+<status status="FAIL" endtime="20180316 14:23:57.402" critical="yes" starttime="20180316 14:23:33.247">ValueError: Element locator 'css=body &gt; ion-nav-view &gt; ion-side-menus &gt; ion-side-menu-content &gt; ion-nav-view &gt; ion-view &gt; ion-tabs &gt; div &gt; a:nth-child(8)' did not match any elements.</status>
+</test>
+<status status="FAIL" endtime="20180316 14:23:57.406" starttime="20180316 14:23:32.749"></status>
+</suite>
+<status status="FAIL" endtime="20180316 14:23:57.410" starttime="20180316 14:23:32.743"></status>
+</suite>
+<status status="FAIL" endtime="20180316 14:23:57.414" starttime="20180316 14:23:32.698"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Tc" pass="0">Tc</stat>
+<stat fail="1" id="s1-s1" name="添加子BD" pass="0">Tc.添加子BD</stat>
+<stat fail="1" id="s1-s1-s1" name="addBD" pass="0">Tc.添加子BD.addBD</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

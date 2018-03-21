@@ -11,7 +11,7 @@ num = '18367140869'
 def register():
     driver = webdriver.Chrome(executable_path)
     driver.implicitly_wait(10)
-    #进入投融家登录入口页面
+    #进入投融家登录入口页面添加
     driver.get('https://wapescrow.tourongjia.com/#/login///')
     time.sleep(2)
     driver.find_element_by_css_selector('#MobileNum').send_keys(num)
